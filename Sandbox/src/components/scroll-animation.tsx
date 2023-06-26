@@ -1,11 +1,20 @@
-import React from "react";
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
-export default function ScrollAnimation() {
+export default function ScrollAnimationSandbox() {
   return (
     <div>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section className="sectionAnimated">
+        <ScrollAnimation animateIn="fadeIn">Some Text</ScrollAnimation>
+      </section>
+      <section className="sectionAnimated">
+        <ScrollAnimation animateIn="fadeIn">Some Text</ScrollAnimation>
+      </section>
+      <section className="sectionAnimated">
+        <ScrollAnimation className="animated" animateIn="fadeIn">
+          Some Text
+        </ScrollAnimation>
+      </section>
     </div>
   );
 }
