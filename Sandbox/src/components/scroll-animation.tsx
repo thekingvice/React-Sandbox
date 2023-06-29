@@ -5,13 +5,17 @@ export default function ScrollAnimationSandbox() {
   return (
     <div>
       <section className="sectionAnimated">
-        <ScrollAnimation animateIn="fadeIn">Some Text</ScrollAnimation>
+        <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+          Some Text
+        </ScrollAnimation>
       </section>
       <section className="sectionAnimated">
-        <ScrollAnimation animateIn="fadeIn">Some Text</ScrollAnimation>
+        <ScrollAnimation animateOnce={true} animateIn="fadeIn">
+          Some Text
+        </ScrollAnimation>
       </section>
       <section className="sectionAnimated">
-        <ScrollAnimation className="animated" animateIn="fadeIn">
+        <ScrollAnimation animateOnce={true} animateIn="fadeIn">
           Some Text
         </ScrollAnimation>
       </section>
