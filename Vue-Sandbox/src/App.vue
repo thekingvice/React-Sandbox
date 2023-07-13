@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import Accordian from "./components/Accordian.vue";
+import { ref } from "vue";
+
+const accordianObject = ref([{ id: 1, content: "Yernamean" }]);
 </script>
 
 <template>
@@ -12,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <Accordian :accordianObject="accordianObject" />
 </template>
 
 <style scoped>
