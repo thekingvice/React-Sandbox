@@ -4,9 +4,9 @@ import Accordian from "./components/Accordian.vue";
 import { ref } from "vue";
 
 const accordianObjectList = ref([
-  { id: 1, content: "1st" },
-  { id: 2, content: "2nd" },
-  { id: 3, content: "3rd" },
+  { id: 0, content: "1st", isOpen: false },
+  { id: 1, content: "2nd", isOpen: false },
+  { id: 2, content: "3rd", isOpen: false },
 ]);
 </script>
 
