@@ -3,7 +3,11 @@ import HelloWorld from "./components/HelloWorld.vue";
 import Accordian from "./components/Accordian.vue";
 import { ref } from "vue";
 
-const accordianObject = ref([{ id: 1, content: "Yernamean" }]);
+const accordianObjectList = ref([
+  { id: 1, content: "1st" },
+  { id: 2, content: "2nd" },
+  { id: 3, content: "3rd" },
+]);
 </script>
 
 <template>
@@ -16,7 +20,7 @@ const accordianObject = ref([{ id: 1, content: "Yernamean" }]);
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <Accordian :accordianObject="accordianObject" />
+  <Accordian :accordianObjectList="accordianObjectList" />
 </template>
 
 <style scoped>
