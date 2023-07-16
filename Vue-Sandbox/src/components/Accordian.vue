@@ -12,11 +12,15 @@
 const props:any= defineProps({accordianObjectList:Array})
  
 function handleAccordianTab(tabIndex:number) {
-  
-   if (!props.accordianObjectList[tabIndex].isOpen) {
-    props.accordianObjectList[tabIndex].isOpen = true;
-    
-   }
+if ( props.accordianObjectList[tabIndex].isOpen=== true) {
+  props.accordianObjectList[tabIndex].isOpen = !props.accordianObjectList[tabIndex].isOpen;
+}
+else { 
+  for (let i = 0; i < props.accordianObjectList.length; i++) {
+    props.accordianObjectList[i].isOpen = false
+  }
+  props.accordianObjectList[tabIndex].isOpen = !props.accordianObjectList[tabIndex].isOpen;}
+ 
 }
 
 
