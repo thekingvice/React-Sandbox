@@ -1,7 +1,7 @@
 <template>
   <!-- <div>{{ accordianObjectList[0].content }}</div> -->
   <ul >
-    <li  v-for="object in props.accordianObjectList" v-on:click="(handleAccordianTab(object.id))" >
+    <li  v-for="object in props.accordianObjectList" @click="handleAccordianTab(object.id)" >
       {{ object.id }} <li :style="{ display: object.isOpen ? 'flex' : 'none'}">{{ object.content }}</li>
     </li>
    
@@ -9,13 +9,16 @@
 </template>
 <script setup lang="ts">
 
-const props = defineProps({accordianObjectList:Array})
+const props:any= defineProps({accordianObjectList:Array})
  
-function handleAccordianTab(tabIndex:Number) {
+function handleAccordianTab(tabIndex:number) {
+  
    if (!props.accordianObjectList[tabIndex].isOpen) {
     props.accordianObjectList[tabIndex].isOpen = true;
+    
    }
 }
+
 
 </script>
 <style scoped lang="css">
