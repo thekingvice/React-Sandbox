@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
 import Accordian from "./components/Accordian.vue";
+import Cart from "./components/Cart.vue";
 import { ref } from "vue";
 
 const accordianObjectList = ref([
@@ -21,6 +22,7 @@ const accordianObjectList = ref([
   </div>
   <HelloWorld msg="Vite + Vue" />
   <Accordian :accordianObjectList="accordianObjectList" />
+  <Cart />
 </template>
 
 <style scoped>
