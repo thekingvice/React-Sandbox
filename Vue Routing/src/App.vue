@@ -2,9 +2,9 @@
 
 <template>
   <div>Hello World</div>
-  <a href="/">/Home</a>
-  <a href="/About">/About</a>
-  <router-view to="/"></router-view>
+  <router-link to="/">Home</router-link>
+  <router-link to="/About">About</router-link>
+  <router-view></router-view>
 </template>
 
 <style scoped></style>
