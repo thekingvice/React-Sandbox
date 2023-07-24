@@ -1,3 +1,4 @@
+//Hidden Text
 const Asterisks = " **** **** ****";
 const AccountNum = 123456789012;
 
