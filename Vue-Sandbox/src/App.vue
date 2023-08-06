@@ -9,6 +9,12 @@ const accordianObjectList = ref([
   { id: 1, content: "2nd", isOpen: false },
   { id: 2, content: "3rd", isOpen: false },
 ]);
+
+const src = ref("/vue.svg");
+
+function change() {
+  src.value = "/vite.svg";
+}
 </script>
 
 <template>
@@ -17,12 +23,13 @@ const accordianObjectList = ref([
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+      <img src="/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- <HelloWorld msg="Vite + Vue" />
   <Accordian :accordianObjectList="accordianObjectList" />
-  <Cart />
+  <Cart /> -->
+  <img :src="src" class="logo vue" alt="Vue logo" v-on:click="change" />
 </template>
 
 <style scoped>
