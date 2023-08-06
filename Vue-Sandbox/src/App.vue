@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import Accordian from "./components/Accordian.vue";
-import Cart from "./components/Cart.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+// import Accordian from "./components/Accordian.vue";
+// import Cart from "./components/Cart.vue";
 import { ref } from "vue";
 
-const accordianObjectList = ref([
-  { id: 0, content: "1st", isOpen: false },
-  { id: 1, content: "2nd", isOpen: false },
-  { id: 2, content: "3rd", isOpen: false },
-]);
+// const accordianObjectList = ref([
+//   { id: 0, content: "1st", isOpen: false },
+//   { id: 1, content: "2nd", isOpen: false },
+//   { id: 2, content: "3rd", isOpen: false },
+// ]);
 
 const src = ref("/vue.svg");
 
