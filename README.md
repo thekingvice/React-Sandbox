@@ -1,2 +1,2 @@
 # Sandbox
-My personal sandbox for learning different technologies
+My personal sandbox for learning different technologies.
