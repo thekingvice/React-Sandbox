@@ -1,5 +1,8 @@
 <div>Accordian</div>
 
 <ul *ngFor="let item of accordianInfo; let i = index">
-  <li>{{ item.id }}</li>
+  <li (click)="openTab(i)">{{ item.id }} Tab</li>
+  <li [ngStyle]="{ display: accordianInfo[i].isOpen ? 'block' : 'none' }">
+    {{ item.id }} Content
+  </li>
 </ul>

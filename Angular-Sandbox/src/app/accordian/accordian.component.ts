@@ -11,4 +11,12 @@ export class AccordianComponent {
     { id: 2, isOpen: false },
     { id: 3, isOpen: false },
   ];
+
+  openTab(i: number) {
+    if (this.accordianInfo[i].isOpen) {
+      this.accordianInfo[i].isOpen = false;
+    } else {
+      this.accordianInfo[i].isOpen = true;
+    }
+  }
 }
