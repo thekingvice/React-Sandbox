@@ -15,4 +15,7 @@ export class CounterComponent {
       this.count--;
     }
   }
+  reset() {
+    this.count = 0;
+  }
 }

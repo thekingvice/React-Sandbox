@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { AccordianComponent } from './accordian/accordian.component';
+import { PropsComponent } from './props/props.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    AccordianComponent
+    AccordianComponent,
+    PropsComponent
   ],
   imports: [
     BrowserModule
