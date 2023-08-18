@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { FetchComponent } from './fetch/fetch.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     CounterComponent,
     AccordianComponent,
     PropsComponent,
+    FetchComponent,
   ],
   imports: [
     BrowserModule,
