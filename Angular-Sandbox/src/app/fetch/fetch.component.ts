@@ -8,24 +8,6 @@ import axios from 'axios';
   styleUrls: ['./fetch.component.css'],
 })
 export class FetchComponent {
-  // fetch() {
-  //   fetchAdvice();
-  // }
-
-  // fetchAdvice() {
-  //   axios({
-  //     method: 'get',
-  //     url: 'https://api.adviceslip.com/advice',
-  //   })
-  //     .then((response) => {
-  //       // Handle successful response
-  //       console.log(response.data.slip.advice);
-  //     })
-  //     .catch((error) => {
-  //       // Handle error
-  //       console.error('Error fetching data:', error);
-  //     });
-  // }
   fetchAdvice() {
     const cacheBuster = new Date().getTime(); // Generate a unique value
     const apiUrl = `https://api.adviceslip.com/advice?nocache=${cacheBuster}`;
