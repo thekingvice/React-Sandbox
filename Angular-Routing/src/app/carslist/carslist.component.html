@@ -1,0 +1,11 @@
+<p>carslist works!</p>
+
+<ul>
+  <li *ngFor="let car of carslist">
+    <a [routerLink]="['/car', car.model]">
+      {{ car.year }} {{ car.brand }} {{ car.model }}</a
+    >
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
