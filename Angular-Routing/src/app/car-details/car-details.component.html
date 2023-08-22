@@ -1,1 +1,12 @@
 <p>car-details works!</p>
+
+<div *ngIf="carDetails">
+  <h2>Car Details</h2>
+  <p>Brand: {{ carDetails.brand }}</p>
+  <p>Model: {{ carDetails.model }}</p>
+  <p>Year: {{ carDetails.year }}</p>
+</div>
+
+<div *ngIf="!carDetails">
+  <p>No car details found for the given ID.</p>
+</div>

@@ -2,7 +2,7 @@
 
 <ul>
   <li *ngFor="let car of carslist">
-    <a [routerLink]="['/car', car.model]">
+    <a [routerLink]="['/car', car.id]">
       {{ car.year }} {{ car.brand }} {{ car.model }}</a
     >
   </li>
