@@ -1,4 +1,40 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  background: none;
+  background: rgba(146, 146, 146, 0.266);
+  outline: dotted 2px;
+}
+
+html {
+  background: rgb(66, 36, 47);
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -66,4 +102,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
